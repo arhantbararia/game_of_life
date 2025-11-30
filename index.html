@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Game of Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="controls">
+    <button id="startStop">Start</button>
+    <select id="presets">
+      <option value="">-- Select a Preset --</option>
+      <option value="Draw">Clear</option>
+      <option value="glider">Glider</option>
+      <option value="gosper_glider_gun">Gosper Glider Gun</option>
+      <option value="pulsar">Pulsar</option>
+      <option value="synth">Synth</option>
+      <option value="butterfly">Butterfly</option>
+      <option value="max_filler">Max Filler</option>
+      <option value="game_of_life_text">Conway's Game of Life</option>
+    </select>
+    <button id="reset">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
