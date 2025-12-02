@@ -118,6 +118,21 @@ window.onload = () => {
     initGrid();
     drawGrid();
   });
+
+  // Side Menu Logic
+  const infoBtn = document.getElementById('infoBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  const backBtn = document.getElementById('backBtn');
+
+  infoBtn.addEventListener('click', () => {
+    sideMenu.classList.add('show');
+  });
+
+  const hideMenu = () => {
+    sideMenu.classList.remove('show');
+  };
+
+  backBtn.addEventListener('click', hideMenu);
 };
 
 function resizeCanvas() {

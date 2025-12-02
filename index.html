@@ -22,6 +22,28 @@
       <option value="game_of_life_text">Home</option>
     </select>
     <button id="reset">Reset</button>
+    <button id="infoBtn">What's this?</button>
+  </div>
+
+  <div id="sideMenu">
+    <div class="menu-header">
+      <button id="backBtn" title="Go Back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </button>
+      <h2>Welcome to Conway's Game of Life!</h2>
+    </div>
+    <p>This isn't just a game; it's a <strong>cellular automaton</strong>—a mesmerizing digital universe that evolves on its own. You're looking at a grid of cells, each one either alive or dead, that follow a few simple rules to create breathtakingly complex patterns.</p>
+    
+    <h3>The Rules of Life:</h3>
+    <ol>
+      <li><strong>Birth:</strong> A dead cell with exactly three live neighbours becomes a live cell.</li>
+      <li><strong>Survival:</strong> A live cell with two or three live neighbours survives to the next generation.</li>
+      <li><strong>Death:</strong> In all other cases, a cell dies or remains dead. Overpopulation (more than three neighbours) or loneliness (fewer than two) are fatal.</li>
+    </ol>
+
+    <p>From these simple rules, astonishing structures can emerge some static, some oscillating, and some that travel across the grid like spaceships!</p>
+    
+    <p><strong>Ready to explore?</strong> Check out the presets in the dropdown menu to see some of the most famous and awe-inspiring creations discovered by mathematicians and enthusiasts. From the simple "Butterfly" to the intricate "Gosper Glider Gun" each one tells a unique story of emergence and complexity. Go on, give it a try! You can also draw your own.</p>
   </div>
 
   <script src="script.js"></script>
